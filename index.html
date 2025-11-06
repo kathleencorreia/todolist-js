@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./js/script.js" defer />
+    <script src="./js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/78dcff69ad.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <img src="./img/bg.png" alt="imagem de fundo" />
+      <div class="container">
+        <form id="form-todo">
+          <h2>Crie sua tarefa:</h2>
+          <div class="form-control">
+            <input type="text" id="todo-input" placeholder="Título da tarefa" />
+            <button type="submit" id="icon-plus">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </form>
+        <form id="edit-form" class="hide">
+          <p>Edite sua tarefa:</p>
+          <div class="form-control">
+            <input type="text" id="edit-input" />
+            <button type="submit">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button type="submit" id="cancel-edit-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </form>
+        <div id="form-search-filter">
+          <form id="form-search">
+            <input type="text" id="search-input" placeholder="Buscar tarefa" />
+            <button id="icon-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div id="filter">
+            <p>Filtrar:</p>
+            <select name="" id="filter-select">
+              <option value="all">Todos</option>
+              <option value="done">Feitos</option>
+              <option value="todo">A fazer</option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <div id="todo-list"></div>
+      </div>
+    </section>
+  </body>
+</html>
